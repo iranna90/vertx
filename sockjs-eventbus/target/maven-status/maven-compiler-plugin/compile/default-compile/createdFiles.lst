@@ -1,0 +1,3 @@
+nl/revolution/vertx3/eventbus/sockjs/SockJSEventBusBridge.class
+nl/revolution/vertx3/eventbus/sockjs/VertxStarter.class
+nl/revolution/vertx3/eventbus/sockjs/SimpleVerticle.class

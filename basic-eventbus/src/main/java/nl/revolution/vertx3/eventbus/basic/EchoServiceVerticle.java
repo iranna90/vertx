@@ -16,12 +16,18 @@ public class EchoServiceVerticle extends AbstractVerticle {
 
         vertx.eventBus().consumer(EchoServiceVerticle.ADDRESS, message -> {
             JsonObject messageBody = (JsonObject)message.body();
-            LOG.info("Received message: " + messageBody);
 
             messageBody.put("passedThrough", "echo-service");
             LOG.info("Sending reply: " + messageBody);
 
+            try {
+                Thread.sleep(10 * 1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
             message.reply(messageBody);
+            LOG.info("Reply sent");
         });
     }
 }

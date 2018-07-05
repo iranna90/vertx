@@ -1,0 +1,3 @@
+nl/revolution/vertx3/eventbus/basic/WebVerticle.class
+nl/revolution/vertx3/eventbus/basic/EchoServiceVerticle.class
+nl/revolution/vertx3/eventbus/basic/VertxStarter.class

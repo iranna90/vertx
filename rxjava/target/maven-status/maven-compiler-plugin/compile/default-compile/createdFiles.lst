@@ -1,0 +1,9 @@
+nl/revolution/vertx3/callbacks/CallbacksWebVerticle$RequestHandler.class
+nl/revolution/vertx3/rxjava/RxJavaWebVerticle$RequestHandler.class
+nl/revolution/vertx3/services/Service2.class
+nl/revolution/vertx3/services/Service3.class
+nl/revolution/vertx3/callbacks/CallbacksWebVerticle.class
+nl/revolution/vertx3/rxjava/RxJavaWebVerticle.class
+nl/revolution/vertx3/callbacks/CallbacksVertxStarter.class
+nl/revolution/vertx3/rxjava/RxJavaVertxStarter.class
+nl/revolution/vertx3/services/Service1.class

@@ -1,17 +1,18 @@
 package nl.revolution.vertx3.eventbus.basic;
 
 import io.vertx.core.AbstractVerticle;
+import io.vertx.core.http.HttpServer;
 import io.vertx.core.json.JsonObject;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;
 
 public class WebVerticle extends AbstractVerticle {
 
-    private static final Logger LOG = LoggerFactory.getLogger(WebVerticle.class);
+  private static final Logger LOG = LoggerFactory.getLogger(WebVerticle.class);
 
-    @Override
-    public void start() {
-        LOG.info("Starting webVerticle");
+  @Override
+  public void start() {
+    LOG.info("Starting webVerticle");
 
         vertx.createHttpServer().requestHandler(request -> {
             JsonObject message = new JsonObject()
@@ -27,6 +28,6 @@ public class WebVerticle extends AbstractVerticle {
                 request.response().end(replyBody.encodePrettily());
             });
 
-        }).listen(8080);
-    }
+    }).listen(8080);
+  }
 }
